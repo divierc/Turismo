@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button [defaultHref]="['/actividades']"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-title">Detalle</ion-title>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <div [ngSwitch]='onclic()'>
+        <h2 *ngSwitchCase="'gastronomia'">
+            <ion-img class="img-Menu" [src]="['../../../assets/images/gastronomia.png']"></ion-img>
+            <ion-card-title>Gastronomia</ion-card-title>
+            <ion-textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque dolores aliquid, suscipit delectus natus, aut laboriosam cupiditate incidunt in voluptate magni architecto quod quidem odio ullam numquam eaque consectetur?</ion-textarea>
+        </h2>
+        <h2 *ngSwitchCase="'playas'">
+            <ion-img class="img-Menu" [src]="['../../../assets/images/playas.png']"></ion-img>
+            <ion-card-title>Playas</ion-card-title>
+            <ion-textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque dolores aliquid, suscipit delectus natus, aut laboriosam cupiditate incidunt in voluptate magni architecto quod quidem odio ullam numquam eaque consectetur?</ion-textarea>
+        </h2>
+        <h2 *ngSwitchCase="'bares'">
+            <ion-img class="img-Menu" [src]="['../../../assets/images/bares.jpg']"></ion-img>
+            <ion-card-title>Bares</ion-card-title>
+            <ion-textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque dolores aliquid, suscipit delectus natus, aut laboriosam cupiditate incidunt in voluptate magni architecto quod quidem odio ullam numquam eaque consectetur?</ion-textarea>
+        </h2>
+        <h2 *ngSwitchCase="'tendencias'">
+            <ion-img class="img-Menu" [src]="['../../../assets/images/tendencias.png']"></ion-img>
+            <ion-card-title>Tendencias</ion-card-title>
+            <ion-textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque dolores aliquid, suscipit delectus natus, aut laboriosam cupiditate incidunt in voluptate magni architecto quod quidem odio ullam numquam eaque consectetur?</ion-textarea>
+        </h2>
+    </div>
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button [defaultHref]="['/']"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-title">Heroes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" slot="start">
+
+    <ion-label color="secondary">Squad:</ion-label>
+    <ion-label>{{heroes.squadName}}</ion-label>
+    <ion-label>{{heroes.homeTown}}</ion-label>
+    <ion-label>{{heroes.formed}}</ion-label>
+    <ion-label>{{heroes.secretBase}}</ion-label>
+    <ion-label>{{heroes.active}}</ion-label>
+    <br>
+    <ion-card *ngFor='let objh of heroes.members'>
+        <span *ngIf='objh.age>30'>
+          <ion-label color="secondary" >Name Heroe:</ion-label>
+          <br>
+          <ion-label>{{objh.name}}</ion-label>
+          <ion-label>{{objh.age}}</ion-label>
+          <ion-label>{{objh.secretIdentity}}</ion-label>
+          <br>
+          <ion-label color="secondary">Powers:</ion-label>
+          <br>
+          <ion-label>{{objh.powers[0]}}</ion-label>
+          <ion-label>{{objh.powers[1]}}</ion-label>
+          <ion-label>{{objh.powers[2]}}</ion-label>
+          <br>
+      </span>
+    </ion-card>
+
+
+
+
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button [defaultHref]="['/']"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-title">Actividades</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-grid class="grid-Menu">
+        <ion-row>
+            <ion-col>
+                <ion-item class="item-Menu" [routerLink]="['/actividadesdetalle/', 'gastronomia']" routerDirection="/actividades">
+                    <ion-img class="img-Menu" [src]="['../../../assets/images/gastronomia.png']"></ion-img>
+                    <!-- <ion-content>
+                        <ion-textarea>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum distinctio, odit officiis deleniti veniam at laudantium error perferendis eveniet amet dolorem aliquid minus maxime sunt ab tempore nobis quas quibusdam.</ion-textarea>
+                    </ion-content> -->
+                </ion-item>
+
+            </ion-col>-
+            <ion-col>
+                <ion-item class="item-Menu" [routerLink]="['/actividadesdetalle/', 'playas']" routerDirection="/actividades">
+                    <ion-img class="img-Menu" [src]="['../../../assets/images/playas.png']"></ion-img>
+                </ion-item>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-item class="item-Menu" [routerLink]="['/actividadesdetalle/', 'bares']" routerDirection="/actividades">
+                    <ion-img class="img-Menu" [src]="['../../../assets/images/bares.jpg']"></ion-img>
+                </ion-item>
+
+            </ion-col>
+            <ion-col>
+                <ion-item class="item-Menu" [routerLink]="['/actividadesdetalle/', 'tendencias']" routerDirection="/actividades">
+                    <ion-img class="img-Menu" [src]="['../../../assets/images/tendencias.png']"></ion-img>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
